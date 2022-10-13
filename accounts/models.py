@@ -18,7 +18,7 @@ class User(AbstractUser):
 
 
 class BaseModel(models.Model):
-    created_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     deleted_at = models.DateTimeField(auto_now=True)
     modified_at = models.DateTimeField(auto_now=True)
         
